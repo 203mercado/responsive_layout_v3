@@ -1,0 +1,419 @@
+* {
+ box-sizing: border-box;
+}
+
+/*
+==========================
+MAIN HTML TAGS
+==========================
+*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Georgia, sans-serif';
+}
+
+header {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f2f2f2;
+}
+
+footer {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f2f2f2;
+}
+
+/*
+========================
+END OF MAIN HTML TAGS
+=======================
+*/
+
+/*
+==========================
+        HTML TAGS
+==========================
+*/
+h4 {
+  font-weight: normal;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+h4 {
+  max-width: 100%;
+  text-align:justify;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+address {
+  text-align: center;
+  margin-top: 20px;
+}
+
+hr {
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+============================
+END OF HTML TAGS
+============================
+*/
+
+/*
+=======================
+        CSS
+=======================
+*/
+
+.name {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+
+.nav {
+  max-width: 100%;
+  padding: 15px;
+}
+
+.nav ul li {
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav ul li a {
+  display:block;
+}
+
+.nav h1.name {
+  padding-bottom: 20px;
+}
+
+.first-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-container-element {
+  flex: 1;
+}
+
+.first-container-element-1 {
+  flex: 1;
+  margin: auto;
+  text-align: right;
+}
+
+.layout-profile {
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.portfolio-1 {
+  text-transform: uppercase;
+}
+
+.first, .second, .third {
+  background-color: white;
+}
+
+.flex-item-1 {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.contact-1 {
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.footer-wrap {
+  max-width: 1200px;
+  padding: 0 15px;
+  padding-top: 50px;
+}
+
+}
+/* PSEUDO CLASSES */
+a:hover {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+/* END OF PSEUDO CLASSES */
+
+/*
+==========================
+      END OF CSS
+=========================
+*/
+
+/*
+=============================
+MEDIA QUERIE FOR TABLET
+=============================
+*/
+
+ @media (min-width:768px) {
+
+/*
+=================================
+        MAIN HTML TAGS
+=================================
+*/
+
+body {
+  font-family: 'Georgia, sans-serif';
+}
+
+header {
+  padding-bottom: 70px;
+}
+
+/*
+==============================
+      OTHER HTML TAGS
+==============================
+*/
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*
+===============================
+          CSS
+===============================
+*/
+
+.name {
+  margin: 0 auto;
+}
+
+.nav {
+  margin: 0 auto;
+  padding-left: 70px;
+}
+
+.nav ul {
+  text-align: center;
+}
+
+.nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 60px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav h1.name {
+  padding-bottom: 0px;
+  padding-right: 40px;
+}
+
+.layout-profile {
+  max-width: 100%;
+}
+
+.portfolio-1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.first, .second, .third {
+  background-color: inherit;
+}
+
+.wrapper, .footer-wrap {
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+div ul.first-container  {
+  display: flex;
+  margin-left: 20px;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+
+/* PSEUDO CLASS */
+
+a:hover,
+a:visited,
+a:link,
+a:visited {
+  color: black;
+}
+
+/* PSEUDO CLASS END */
+
+/* FLEX STYLES */
+
+.flex-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container-1 li {
+	flex-basis: 48%;
+	text-align: center;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  order: 2;
+  margin-right: 30px;
+}
+
+.flex-item-1 {
+  order: 1;
+  flex: 1.5;
+}
+
+/*END OF FLEX STYLES*/
+
+ }
+
+ /*
+=============================
+MEDIA QUERIE FOR DESKTOP
+=============================
+ */
+
+ @media (min-width: 1024px) {
+
+/*
+=============================
+      MAIN HTML TAGS
+=============================
+*/
+
+body {
+  font-family: 'Georgia, sans-serif';
+}
+
+/*
+=============================
+      OTHER HTML TAGS
+=============================
+*/
+
+h4 {
+ max-width: 100%;
+ text-align:justify;
+ text-align: center;
+ padding-bottom: 30px;
+}
+
+
+/*
+============================
+        FLEX STYLES
+============================
+*/
+
+.flex-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container-1 li {
+	flex-basis: 32%;
+	text-align: center;
+}
+
+/*
+========================
+          CSS
+========================
+*/
+.center {
+  text-align: center;
+}
+
+.name {
+	text-align: left;
+	flex: 1;
+	;
+}
+
+.nav {
+  display: flex;
+  padding-left: 35px;
+  padding-right: 30px;
+}
+
+.nav ul {
+   text-align: right;
+ }
+.nav ul li.third {
+  margin-right: 0;
+
+}
+
+
+
+ }
