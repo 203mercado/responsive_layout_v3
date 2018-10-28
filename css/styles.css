@@ -11,12 +11,12 @@ MAIN HTML TAGS
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Georgia, sans-serif';
+  font-family: 'Georgia', sans-serif;
 }
 
 header {
-  margin: 0px;
-  padding: 0px;
+  margin:0px;
+  padding:0px;
   background-color: #f2f2f2;
 }
 
@@ -72,6 +72,7 @@ a {
 }
 
 ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -110,6 +111,7 @@ END OF HTML TAGS
 }
 
 .nav ul li a {
+  text-decoration: none;
   display:block;
 }
 
@@ -153,7 +155,6 @@ END OF HTML TAGS
 
 .contact-1 {
   text-transform: uppercase;
-  font-style: normal;
 }
 
 .wrapper {
@@ -167,6 +168,8 @@ END OF HTML TAGS
   padding-top: 50px;
 }
 
+div ul.first-container li:nth-last-child(-n+3) {
+  display: none;
 }
 /* PSEUDO CLASSES */
 a:hover {
@@ -208,7 +211,7 @@ MEDIA QUERIE FOR TABLET
 */
 
 body {
-  font-family: 'Georgia, sans-serif';
+  font-family: 'Georgia', sans-serif;
 }
 
 header {
@@ -231,7 +234,7 @@ ul {
 
 /*
 ===============================
-          CSS
+            CSS
 ===============================
 */
 
@@ -287,12 +290,17 @@ ul {
   text-align: center;
 }
 
-div ul.first-container  {
+div ul.first-container li:nth-last-child(-n+3) {
   display: flex;
   margin-left: 20px;
   padding-top: 15px;
   text-transform: uppercase;
 }
+
+div ul.first-container li.first-container-element-1 {
+  display: none;
+}
+
 
 
 /* PSEUDO CLASS */
@@ -352,7 +360,7 @@ MEDIA QUERIE FOR DESKTOP
 */
 
 body {
-  font-family: 'Georgia, sans-serif';
+  font-family: 'Georgia', sans-serif;
 }
 
 /*
@@ -396,8 +404,9 @@ h4 {
 
 .name {
 	text-align: left;
+	margin: auto 0;
 	flex: 1;
-	;
+	padding: 0;
 }
 
 .nav {
@@ -408,12 +417,11 @@ h4 {
 
 .nav ul {
    text-align: right;
- }
-.nav ul li.third {
-  margin-right: 0;
-
 }
 
+.nav ul li.third {
+  margin-right: 0;
+}
 
 
  }
